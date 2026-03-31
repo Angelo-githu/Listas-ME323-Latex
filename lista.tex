@@ -34,9 +34,9 @@
     A^{c} = \{\text{BI e CA}\} \text{, } A - B = A \cap B^{c} = \{\text{O e L}\}$
     
     \item Tome $\mathbb{L}$, $\mathbb{S}$ e $\mathbb{P}$ conjuntos que definem respectivamente a quantidade de linguagens de programação, sensores e protocolos
-    disponiveis respectivamente. Observa-se que \#$\mathbb{L}$ = 3, \#$\mathbb{S}$ = 4, \#$\mathbb{P}$ = 2 então: 
+    disponiveis respectivamente. Observa-se que \#$\mathbb{L}$ = 3, \#$\mathbb{S}$ = 4, \#$\mathbb{P}$ = 2 temos então que pelo PFC (princípio fundamental da contagem): 
     
-    $\#\Omega = (\#\mathbb{L} * \#\mathbb{S} * \#\mathbb{P}) \Longleftrightarrow  \#\Omega = 24$.          
+    $$\#\Omega = (\#\mathbb{L} * \#\mathbb{S} * \#\mathbb{P}) \Longrightarrow  \#\Omega = 24$$.          
 
     \item O numero de diferentes ordens que pode se ter de apresentações entre os alunos e $P_6 = 6!$ .
     
@@ -47,7 +47,24 @@
     $$(x + y)^{4} = x^{4} + 4x^{3}y + 6x^{2}y^{2} + 4y^{3}x + y^{4}$$ 
     tal que o coeficiente de $x^{2}y^{2} \text{, } C_1 = 6$.
 
-    \item 
+    \item Tome $\mathbb{S}$, $\mathbb{C}$ e $\mathbb{M}$ conjuntos que definem respectivamente a quantidade de linguagens de programação, sensores e protocolos
+    disponiveis respectivamente. Observa-se que \#$\mathbb{L}$ = 3, \#$\mathbb{S}$ = 2, \#$\mathbb{P}$ = 1 temos então que pelo PFC (princípio fundamental da contagem): 
+    
+    $$\#\Omega = (\#\mathbb{L} * \#\mathbb{S} * \#\mathbb{P}) \Longrightarrow  \#\Omega = 6$$. 
+
+    \item Para cada um dos 4 minicursos, a estudante possui 2 opções (assistir ou não assistir). Pelo princípio multiplicativo, o total de subconjuntos possíveis é:
+    $$ 2^4 = 16 $$
+
+    \noindent Verificando através da soma das combinações:
+    $$
+    \begin{aligned}
+    \text{Total} &= \binom{4}{0} + \binom{4}{1} + \binom{4}{2} + \binom{4}{3} + \binom{4}{4} \\
+    &= 1 + 4 + 6 + 4 + 1 \\
+    &= 16
+    \end{aligned}
+    $$
+
+    \noindent Portanto, a estudante pode escolher entre \textbf{16} subconjuntos de minicursos. 
 
 \end{enumerate} 
 
