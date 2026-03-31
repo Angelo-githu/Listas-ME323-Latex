@@ -23,11 +23,22 @@
         \item Determinístico
         \item Aleatório
     \end{enumerate}
+    
     \item $\Omega = \{\text{livre}, \text{ocupada}, \text{em manutenção}\}$
-    \item Considere dois conjuntos M e F sendo $M = \{\text{O (Onibus)}\text{, B (Bicicleta)}\text{, C (Carro)}\}$ os modos de se deslocar a faculdade e 
+    
+    \item Considere dois conjuntos M e F sendo $M = \{\text{O (Onibus)}\text{, BI (Bicicleta)}\text{, CA (Carro)}\}$ os modos de se deslocar a faculdade e 
     $F = \{\text{C (Curta)} \text{, L (Longa)}\}$ os possiveis estados que a fila pode assumir temos: $$\Omega = M \times D$$ tal que 
-    $\Omega = \{(\text{O},\text{C}),(\text{O},\text{L}),(\text{B},\text{C}),(\text{B},\text{L}),(\text{C},\text{C}),(\text{C},\text{L})\}$
-    \item 
+    $\Omega = \{(\text{O},\text{C}),(\text{O},\text{L}),(\text{BI},\text{C}),(\text{BI},\text{L}),(\text{CA},\text{C}),(\text{CA},\text{L})\}$
+    
+    \item $A = \{\text{O}\} \text{, } B = \{\text{C}\} \text{, } A \cup B = \{\text{O ou C}\} \text{, } A \cap B = \{\text{O e C}\} \text{, } 
+    A^{c} = \{\text{BI e CA}\} \text{, } A - B = A \cap B^{c} = \{\text{O e L}\}$
+    
+    \item Tome $\mathbb{L}$, $\mathbb{S}$ e $\mathbb{P}$ conjuntos que definem respectivamente a quantidade de linguagens de programação, sensores e protocolos
+    disponiveis respectivamente. Observa-se que \#$\mathbb{L}$ = 3, \#$\mathbb{S}$ = 4, \#$\mathbb{P}$ = 2 então: 
+    
+    $\#\Omega = (\#\mathbb{L} * \#\mathbb{S} * \#\mathbb{P}) \Longleftrightarrow  \#\Omega = 24$.          
+
+
 \end{enumerate}
 
-\end{document}
+\end{document}  
