@@ -1,0 +1,76 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\DeclareMathOperator{\Var}{Var}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\prob}{\mathbb{P}}
+
+\title{\textbf{Lista 2 ME323}}
+\author{Julio da Silva Telles RA:281275}
+
+\begin{document}
+
+\maketitle{}
+
+\begin{enumerate}
+    \item \begin{enumerate}
+        \item Classica
+        \item Frequência relativa
+        \item Modelagem
+    \end{enumerate}
+    
+    \item Denotando o espaço amostral como $\Omega \text{ e o conjunto de eventos favoraveis de } {\E}$ temos:
+    $$\prob(\E) = \frac{n(\E)}{n(\Omega)}$$ tal que $\prob(\E)$ = 37,5%.
+    
+    \item Dado que $\prob(A) = 0.18$ temos que: $$\prob(A^{c}) = 1 - \prob(A)$$ Portando $\prob(A) = 0.82$.
+    
+    \item \begin{enumerate} 
+        \item Dado que $\prob(N) = 0.7$, $\prob(T) = 0.55$ e $\prob(N \cap T) = 0.4$ temos:
+        $$\prob(N \cup T) = \prob(N) + \prob(T) - \prob(N \cap T)$$
+        Tal que $\prob(N \cup T) =  0.85$.
+        \item Sendo $\prob(N \cup T) = 0.85$ temos:
+        $$\prob(-) = 1 - \prob(N \cup T)$$
+        Tal que $\prob(-) = 0.15$
+    \end{enumerate}
+    
+    \item Denotando o espaço amostral como $\Omega$ tal que $n(\Omega) = 36$ (PFC) e $\mathbb{S}$ como o conjunto
+    de combinações de faces cuja soma é 7, tal que $n(\mathbb{S}) = 6$ temos:
+    $$\prob(S) = \frac{n(\mathbb{S})}{n(\Omega)}$$
+    Assim temos que $\prob(\mathbb{S}) = 1/6$.
+    
+    \item Denotando o espaço amostral como $\Omega$ tal que $n(\Omega) = 200$ e $\mathbb{T}$ como o conjunto
+    dos casos em que ocorreu travamento $n(\mathbb{S}) = 18$ temos:
+    $$\prob(S) = \frac{n(\mathbb{T})}{n(\Omega)}$$
+    Assim temos que $\prob(\mathbb{T}) = 0.9$.
+    
+    \item Dado que $\prob(chuva) = 0.25$ e $\prob(atraso \cap chuva) = 0.15$ temos:
+    $$\prob(atraso|chuva) = \frac{\prob(chuva)}{\prob(atraso \cap chuva)}$$
+    Tal que $\prob(atraso|chuva) = 0.6$.
+    
+    \item Tendo como verdade que:
+    $$\prob(A \cap B) = \prob(A) \times \prob(B) \Longleftrightarrow \text{A e B são independentes}$$
+    Assim verificamos que como $0.06 = 0.3 \times 0.2$ A e B são independetes.
+    
+    \item Sejam os eventos:
+    \begin{itemize}
+        \item $A, B, C$: a placa é do fornecedor A, B ou C, respectivamente.
+        \item $F$: a placa apresenta falha.
+    \end{itemize}
+
+    Pelos dados do problema, temos as probabilidades a priori e as probabilidades condicionais (taxas de falha):
+    \begin{itemize}
+        \item $\prob(A) = 0,50$; $P(F|A) = 0,02$
+        \item $\prob(B) = 0,30$; $P(F|B) = 0,04$
+        \item $\prob(C) = 0,20$; $P(F|C) = 0,01$
+    \end{itemize}
+
+    Utilizando o \textbf{Teorema da Probabilidade Total}, a probabilidade de uma placa escolhida ao acaso apresentar falha é:
+    $$\prob(F) = \prob(A) \cdot \prob(F|A) + \prob(B) \cdot \prob(B) + \prob(C) \cdot \prob(F|C)$$
+    Tal que $\prob(F) = 0,024$.
+\end{enumerate}
+
+\end{document}
