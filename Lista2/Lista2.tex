@@ -48,7 +48,7 @@
     Assim temos que $\prob(\mathbb{T}) = 0.9$.
     
     \item Dado que $\prob(chuva) = 0.25$ e $\prob(atraso \cap chuva) = 0.15$ temos:
-    $$\prob(atraso|chuva) = \frac{\prob(chuva)}{\prob(atraso \cap chuva)}$$
+    $$\prob(atraso|chuva) = \frac{\prob(atraso \cap chuva)}{\prob(chuva)}$$
     Tal que $\prob(atraso|chuva) = 0.6$.
     
     \item Tendo como verdade que:
@@ -71,6 +71,28 @@
     Utilizando o \textbf{Teorema da Probabilidade Total}, a probabilidade de uma placa escolhida ao acaso apresentar falha é:
     $$\prob(F) = \prob(A) \cdot \prob(F|A) + \prob(B) \cdot \prob(B) + \prob(C) \cdot \prob(F|C)$$
     Tal que $\prob(F) = 0,024$.
+
+    \item Sejam a probabilidade de cada evento ocorrer:
+    \begin{itemize}
+        \item $\prob(P) = 0.05$
+        \item $\prob(+|P) = 0.92$
+        \item $\prob(+|P^{c}) = 0.08$
+    \end{itemize}
+    Temos então que:
+    $$\prob(+) =  \prob(P) \cdot \prob(+|P) + \prob(P^{c}) \cdot \prob(+|P^{c})$$
+    $$\prob(+) =  \prob(P) \cdot \prob(+|P) + (1 - \prob(P)) \cdot \prob(+|P^{c})$$
+    Assim $\prob(+) = 0.122$ (pelo teorema de Bayes) $\Longrightarrow$ 
+    $$\prob(P|+) = \frac{\prob(P) \cdot \prob(+|P)}{\prob(P)}$$
+    Tal que $\prob(P|+) = 0.377$.
+
+    \item Dado as probabilidades do exercicio anterior temos que:
+    $$\prob(+) =  \prob(P) \cdot \prob(+|P) + \prob(P^{c}) \cdot \prob(+|P^{c})$$
+    $$\prob(+) =  \prob(P) \cdot \prob(+|P) + (1 - \prob(P)) \cdot \prob(+|P^{c})$$
+    Assim $\prob(+) = 0.122$.
+
+    \item Sim, a afirmação está correta. Dado que $\mathbb{B} = \mathbb{A} \cup \mathbb{B - A}$ temos que:
+    $$\prob(B) = \prob(A) + \prob(B - A)$$
+    Pelo Axioma da não negatividade temos que $\prob(B - A) \ge 0 \Longrightarrow \prob(A) \ge \prob(B)$.
 \end{enumerate}
 
 \end{document}
